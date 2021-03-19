@@ -1,0 +1,64 @@
+{
+"AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "Here we have our Cloudformation building block that we'll base all of our expermients on!",
+    "Metadata": {
+
+    },
+    "Parameters": {
+        
+        "StackName": {
+            "Description": "The name of the stack we'll reference in the resources",
+            "Type": "String"
+        },
+        
+        "VPCIDR": {
+            "Description": "The IP range of the VPC in CIDR notation",
+            "Type": "String",
+            "Default": "13.37.0.0/16"
+        },
+        
+        "PubSubNet1IP": {
+            "Description": "-",
+            "Type": "[String|Number|CommaDelimitedList]",
+            "Default": "-"
+        },
+        "PubSubNet1IP":{
+            "Description": "The IP range we'll use for the first public subnet",
+            "Type": "String",
+            "Default": "13.37.10.0/24"
+        },
+    
+        "PubSubNet2IP":{
+            "Description": "The IP range we'll use for the second public subnet",
+            "Type": "String",
+            "Default": "13.37.11.0/24"
+        },
+    
+        "PriSubNet1IP":{
+            "Description": "The IP range we'll use for the first private subnet",
+            "Type": "String",
+            "Default": "13.37.12.0/24"
+        },
+    
+        "PriSubNet2IP":{
+            "Description": "The IP range we'll use for the second private subnet",
+            "Type": "String",
+            "Default": "13.37.12.0/24"
+        }
+        
+        
+    
+    },
+    "Mappings": {
+
+    },
+    "Conditions": {
+
+    },
+    "Resources": {
+
+    },
+    "Outputs": {
+
+    }
+}
